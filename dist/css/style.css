@@ -1,3 +1,37 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 12px 25px 0px 25px; }
+  @media (min-width: 768px) {
+    .header {
+      grid-template-columns: 1fr 2fr; } }
+  .header__logo {
+    width: 46px;
+    height: 38px; }
+    @media (min-width: 768px) {
+      .header__logo {
+        width: 63px;
+        height: 52px; } }
+  .header__main-menu {
+    display: none; }
+    @media (min-width: 768px) {
+      .header__main-menu {
+        display: grid; } }
+  .header__menu-burger {
+    justify-self: end;
+    width: 40px;
+    border: none;
+    background: none; }
+    @media (min-width: 768px) {
+      .header__menu-burger {
+        display: none; } }
+
+.main-menu__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-width: 250px;
+  list-style: none; }
+
 h1 {
   color: rebeccapurple;
   font-size: 40px;
