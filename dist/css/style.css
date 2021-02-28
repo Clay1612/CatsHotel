@@ -1,0 +1,24 @@
+h1 {
+  color: rebeccapurple;
+  font-size: 40px;
+  text-align: center; }
+
+p {
+  color: cadetblue;
+  font-size: 20px; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 1920px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=style.css.map */
