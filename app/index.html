@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cats Hotel</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/vendors.css">
 </head>
@@ -24,6 +24,39 @@
       <img src="/assets/images/burger-icon.svg" alt="Menu button">
     </button>
   </header>
+  <main class="main-content">
+    <h2 class="main-content__header">Наши номера</h2>
+    <section class="main-content__catalog-section catalog-section">
+      <div class="catalog-section__filters">
+        <label class="catalog-section__input-label" for="select-filter">
+          <img class="catalog-section__filter-icon" src="/assets/images/filter-icon.svg" alt="filter icon">
+          <span>Фильтры</span>
+        </label>
+        <select class="catalog-section__select-input" name="select-filter" id="select-filter">
+          <img src="/assets/images/up-icon.svg" alt="Up Icon"> <!--** FIX ME **-->
+          <option value="By Square">По площади</option>
+          <option value="By Price">По цене</option>
+          <img src="/assets/images/down-icon.svg" alt="Down Icon">
+        </select>
+      </div>
+      <div class="catalog-section__number-card card">
+        <div class="card__picture">
+          <img src="/assets/images/card-econom-cat.jpg" alt="Cat Picture">
+        </div>
+        <h3 class="card__title">Эконом</h3>
+        <p class="card__text">
+          Размеры (ШхГхВ) - 90х70х180 см <br> 
+          Площадь - 0,63 м2 <br> 
+          Оснащение номера <br>
+          Цена за сутки: <span class="card__price">100₽</span>
+        </p>
+        <button class="card__button">
+          Забронировать
+          <img src="/assets/images/Cat-Paw.svg" alt="Cat paw picture">
+        </button>
+      </div>
+    </section>
+  </main>
   <script src="js/index.js"></script>
 </body>
 </html>
