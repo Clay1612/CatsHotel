@@ -1,4 +1,5 @@
 .main-content {
+  display: grid;
   padding: 0px 15px;
 
   @media (min-width: 768px) {
@@ -37,6 +38,25 @@
         font-size: 36px;
         line-height: 43px;
       }
+  }
+
+  &__cat-card {
+    justify-self: center;
+
+    display: grid;
+
+    @media (min-width: 660px) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      grid-column-gap: 30px;
+    }
+
+    @media (min-width: 1366px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 
