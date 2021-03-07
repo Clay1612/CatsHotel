@@ -15,8 +15,8 @@
 
     @media (min-width: 768px) {
       margin-bottom: 40px;
-      grid-template-columns:repeat(3, 1fr);  //** FIX ME **
-
+      grid-template-columns: 1fr 1fr;
+    }
     @media (min-width: 1366px) {
       margin-bottom: 50px;
     }
@@ -46,6 +46,7 @@
   grid-column-gap: 25px;
   justify-content: end;
   justify-items: center;
+  padding-top: 10px;
 
   &__filter-button {
     padding: 5px 15px;
