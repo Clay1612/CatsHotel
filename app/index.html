@@ -23,6 +23,23 @@
       <img src="assets/images/burger-icon.svg" alt="Menu button">
     </button>
   </header>
+  <main class="main-content">
+    <div class="main-content__filters-wrapper">
+      <h2 class="main-content__title">Наши номера</h2>
+      <section class="main-content__filters-section filters">
+        <button class="filters__filter-button">
+          <img src="assets/images/filter-icon.svg" alt="Filter icon" class="filters__filter-image">
+          <span>Фильтры</span>
+        </button>
+        <select name="select-filter" id="select-filter" class="filters__select">
+          <option value="by square up" class="filters__option">&#8593 По площади</option>
+          <option value="by square down" class="filters__option">&#8595 По площади</option>
+          <option value="by price up" class="filters__option">&#8593 По цене</option>
+          <option value="by price down" class="filters__option">&#8595 По цене</option>
+        </select>
+      </section>
+    </div>
+  </main>
   <script src="js/index.js"></script>
 </body>
 </html>
