@@ -39,6 +39,42 @@
         </select>
       </section>
     </div>
+    <section class="main-content__popup-filter popup-filter">
+      <div class="popup-filter__price-filter">
+        <h4 class="popup-filter__titles">Цена за сутки,₽</h4>
+        <input type="text" name="price-from" id="price-from" placeholder="от 100" class="popup-filter__price-inputs">
+        <input type="text" name="price-to" id="price-to" placeholder="до 600" class="popup-filter__price-inputs">
+      </div>
+      <div class="popup-filter__square-filter">
+        <h4 class="popup-filter__titles">Площадь</h4>
+        <input type="checkbox" id="square-checkbox-1" class="popup-filter__checkbox" checked>
+        <label for="square-checkbox-1" class="popup-filter__checkbox-label">0,63 м2</label>
+        <input type="checkbox" id="square-checkbox-2" class="popup-filter__checkbox" checked>
+        <label for="square-checkbox-2" class="popup-filter__checkbox-label">0,90 м2</label>
+        <input type="checkbox" id="square-checkbox-3" class="popup-filter__checkbox" checked>
+        <label for="square-checkbox-3" class="popup-filter__checkbox-label">1,13 м2</label>
+        <input type="checkbox" id="square-checkbox-4" class="popup-filter__checkbox" checked>
+        <label for="square-checkbox-4" class="popup-filter__checkbox-label">1,56 м2</label>
+        <input type="checkbox" id="square-checkbox-5" class="popup-filter__checkbox" checked>
+        <label for="square-checkbox-5" class="popup-filter__checkbox-label">2,56 м2</label>
+        <input type="checkbox" id="square-checkbox-6" class="popup-filter__checkbox" checked>
+        <label for="square-checkbox-6" class="popup-filter__checkbox-label">2,88 м2</label>
+      </div>
+      <div class="popup-filter__equipment-filter">
+        <h4 class="popup-filter__titles">Оснащение номера</h4>
+        <input type="checkbox" id="equipment-checkbox-1" class="popup-filter__checkbox" checked>
+        <label for="equipment-checkbox-1" class="popup-filter__checkbox-label">Пустой номер</label>
+        <input type="checkbox" id="equipment-checkbox-2" class="popup-filter__checkbox" checked>
+        <label for="equipment-checkbox-2" class="popup-filter__checkbox-label">Лежак</label>
+        <input type="checkbox" id="equipment-checkbox-3" class="popup-filter__checkbox" checked>
+        <label for="equipment-checkbox-3" class="popup-filter__checkbox-label">Когтеточка</label>
+        <input type="checkbox" id="equipment-checkbox-4" class="popup-filter__checkbox" checked>
+        <label for="equipment-checkbox-4" class="popup-filter__checkbox-label">Игровой-комплекс</label>
+        <input type="checkbox" id="equipment-checkbox-5" class="popup-filter__checkbox" checked>
+        <label for="equipment-checkbox-5" class="popup-filter__checkbox-label">Домик</label>
+      </div>
+      <button class="popup-filter__reset-button">Сбросить фильтр</button>
+    </section>
     <section class="main-content__cat-card">
       <div class="card">
         <img src="assets/images/card-econom-cat.jpg" alt="Cat picture" class="card__picture">
@@ -158,6 +194,7 @@
         </div>
       </div>
     </section>
+    
   </main>
   <script src="js/index.js"></script>
 </body>
