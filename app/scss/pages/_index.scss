@@ -44,9 +44,9 @@
   }
 
   &__cat-card {
-    justify-self: center;
-
     display: grid;
+    justify-self: center;
+    margin-bottom: 40px;
 
     @media (min-width: 660px) {
       grid-template-columns: 1fr 1fr;
@@ -61,6 +61,10 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-row-start: 2;
     }
+  }
+
+  &__promo-section {
+    margin-bottom: 70px;
   }
 }
 

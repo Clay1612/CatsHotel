@@ -57,6 +57,67 @@
     text-decoration: none;
     color: #1A212F; }
 
+.promo-card {
+  justify-self: center;
+  width: 290px;
+  padding: 50px 25px 258px 25px;
+  text-align: center;
+  background-image: url("/assets/images/Promo-transparent-paw.png"), url("/assets/images/promo-background-mobile.jpg");
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .promo-card {
+      padding: 70px 307px 70px 50px;
+      width: 678px;
+      text-align: justify;
+      background-image: url("/assets/images/promo-paw-ipad.png"), url("/assets/images/promo-background-ipad.png"); } }
+  @media (min-width: 1366px) {
+    .promo-card {
+      grid-column: 1 / 3;
+      padding: 75px 581px 75px 270px;
+      width: 1170px;
+      background-image: url("/assets/images/promo-paw-desktop.png"), url("/assets/images/promo-background-desktop.png"); } }
+  .promo-card__title {
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 24px;
+    line-height: 28px; }
+    @media (min-width: 768px) {
+      .promo-card__title {
+        font-size: 36px;
+        line-height: 43px; } }
+    .promo-card__title span {
+      font-size: 37px;
+      line-height: 44px; }
+      @media (min-width: 768px) {
+        .promo-card__title span {
+          font-size: 56px;
+          line-height: 66px; } }
+  .promo-card__description {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 15px;
+    line-height: 21px; }
+    @media (min-width: 768px) {
+      .promo-card__description {
+        width: 225px;
+        text-align: justify; } }
+  .promo-card__submit-button {
+    position: relative;
+    padding: 14px 60px 14px 30px;
+    font-size: 16px;
+    line-height: 19px;
+    background: #FFFEFD;
+    -webkit-box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+            box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+    border-radius: 25px;
+    border: none; }
+    .promo-card__submit-button img {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 36px;
+      height: 36px; }
+
 .popup-filter {
   display: none; }
   @media (min-width: 1366px) {
@@ -194,8 +255,9 @@
         line-height: 43px;
         text-align: justify; } }
   .main-content__cat-card {
+    display: grid;
     justify-self: center;
-    display: grid; }
+    margin-bottom: 40px; }
     @media (min-width: 660px) {
       .main-content__cat-card {
         grid-template-columns: 1fr 1fr;
@@ -207,6 +269,8 @@
       .main-content__cat-card {
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-start: 2; } }
+  .main-content__promo-section {
+    margin-bottom: 70px; }
 
 .filters {
   display: grid;
