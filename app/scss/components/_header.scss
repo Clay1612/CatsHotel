@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 40px;
-  padding: 12px 45px 12px 15px;
+  padding: 12px 45px;
 
   @media (min-width: 768px) {
     padding: 12px 45px;
@@ -61,7 +61,7 @@
 
     @media (min-width: 768px) {
       display: grid;
-      grid-template-columns: 100px 50px 50px 100px;
+      grid-template-columns: 100px 50px 50px 120px;
       grid-column-gap: 30px;
       justify-content: end;
     }
