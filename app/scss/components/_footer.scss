@@ -2,12 +2,8 @@
   display: grid;
   margin-bottom: 10px;
 
-  @media (min-width: 660px) {
-    padding: 0 50px;
-  }
-
-  @media (min-width: 768px) {
-    padding: 0;
+  @media (min-width: 1366px) {
+    padding: 0px 98px;
   }
 
   &__contacts {
@@ -22,15 +18,19 @@
 
     @media (min-width: 660px) {
       grid-template-columns: 1fr 2fr;
+      padding: 10px 45px 20px 45px;
       width: 100%;
+      max-width: 764px;
     }
 
-    @media (min-width: 768px) {
-      padding: 10px 45px 20px 45px;
+    @media (min-width: 1366px) {
+      min-width: 1170px;
+      max-width: 2000px;
     }
   }
 
   &__logo {
+    margin-bottom: 25px;
     width: 50px;
 
     @media (min-width: 768px) {
@@ -38,7 +38,6 @@
     }
 
     img {
-      margin-bottom: 25px;
       width: 46px;
       height: 38px;
 
@@ -49,18 +48,28 @@
     }
   }
 
+  &__menu {
+    display: grid;
+    margin: 0 0 45px 0;
+
+    @media (min-width: 660px) {
+      margin: 0;
+      padding-top:10px;
+    }
+  }
+
   &__menu-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
 
     padding: 0;
-    margin: 0 0 45px 0;
+    margin: 0;
 
     list-style: none;
 
     @media(min-width: 660px) {
-      grid-template-columns: 100px 50px 50px 100px;
+      grid-template-columns: 100px 50px 50px 120px;
       grid-column-gap: 30px;
       justify-content: end;
     }
