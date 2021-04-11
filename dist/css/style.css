@@ -179,6 +179,11 @@
     border: 2px solid #FAC663;
     border-radius: 25px; }
 
+.popup-filter--active {
+  position: absolute;
+  top: 10px;
+  display: block; }
+
 .card {
   display: grid;
   margin-bottom: 30px;
