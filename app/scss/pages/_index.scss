@@ -45,6 +45,10 @@
       }
   }
 
+  &__form-wrapper {
+    grid-row-start: 2;
+  }
+
   &__cat-card {
     display: grid;
     justify-self: center;

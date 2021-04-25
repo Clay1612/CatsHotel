@@ -30,10 +30,16 @@
     }
   }
   &__burder-button {
+    position: relative;
     justify-self: end;
     width: 50px;
 
     img {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+
       width: 22px;
       height: 14px;
     }
@@ -44,6 +50,32 @@
     @media (min-width: 768px) {
       display: none;
     }
+  }
+
+  &__contacts {
+    display: none;
+
+    &--active {
+      display: block;
+
+      font-size: 16px;
+      line-height: 19px;
+
+      .header__phone-contact {
+        margin: 15px 0 25px 0;
+        padding: 0;
+      }
+
+      .contacts__social-button {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &--active {
+    padding-bottom: 188px;
+
+    background: #FAC663;
   }
 }
 
@@ -77,5 +109,28 @@
   &__link {
     text-decoration: none;
     color: #1A212F;
+  }
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+
+    .main-menu__list {
+      margin: 0;
+    }
+
+    .main-menu__item {
+      margin-bottom: 25px;
+
+      &:first-of-type {
+        margin-top: 50px;
+      }
+    }
+
+    .main-menu__link {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+    }
   }
 }

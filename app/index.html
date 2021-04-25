@@ -15,17 +15,33 @@
     <a href="#" class="header__logo">
       <img src="assets/images/logo.svg" alt="Logo">
     </a>
-    <nav class="header__main-menu main-menu">
-      <ul class="main-menu__list">
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Почему мы?</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Номера</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Как нас найти</a></li>
-      </ul>
-    </nav>
     <button class="header__burder-button">
-      <img src="assets/images/burger-icon.svg" alt="Menu button">
+      <img src="assets/images/burger-icon.svg" alt="Menu button" class="header__burger-icon">
     </button>
+    <div class="header__menu-wrapper">
+      <nav class="header__main-menu main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Почему мы?</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Номера</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Как нас найти</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <p class="header__phone-contact">8 (800) 333-55-99</p>
+        <div class="header__social-links">
+          <a href="" class="contacts__social-button">
+            <img src="assets/images/social-facebook.svg" alt="Link to facebook profile">
+          </a>
+          <a href="" class="contacts__social-button">
+            <img src="assets/images/social-instagram.svg" alt="Link to instagram profile">
+          </a>
+          <a href="" class="contacts__social-button">
+            <img src="assets/images/social-vk.svg" alt="Link to vk profile">
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
   <main class="main-content">
     <div class="main-content__filters-wrapper">
@@ -43,42 +59,45 @@
         </select>
       </section>
     </div>
-    <form action="#" method="GET" class="main-content__popup-filter popup-filter">
-      <fieldset class="popup-filter__price-filter">
-        <h4 class="popup-filter__titles">Цена за сутки,₽</h4>
-        <input type="text" name="price-from" id="price-from" placeholder="от 100" class="popup-filter__price-inputs">
-        <input type="text" name="price-to" id="price-to" placeholder="до 600" class="popup-filter__price-inputs">
-      </fieldset>
-      <fieldset class="popup-filter__square-filter">
-        <h4 class="popup-filter__titles">Площадь</h4>
-        <input type="checkbox" id="square-checkbox-1" class="popup-filter__checkbox" checked>
-        <label for="square-checkbox-1" class="popup-filter__checkbox-label">0,63 м2</label>
-        <input type="checkbox" id="square-checkbox-2" class="popup-filter__checkbox" checked>
-        <label for="square-checkbox-2" class="popup-filter__checkbox-label">0,90 м2</label>
-        <input type="checkbox" id="square-checkbox-3" class="popup-filter__checkbox" checked>
-        <label for="square-checkbox-3" class="popup-filter__checkbox-label">1,13 м2</label>
-        <input type="checkbox" id="square-checkbox-4" class="popup-filter__checkbox" checked>
-        <label for="square-checkbox-4" class="popup-filter__checkbox-label">1,56 м2</label>
-        <input type="checkbox" id="square-checkbox-5" class="popup-filter__checkbox" checked>
-        <label for="square-checkbox-5" class="popup-filter__checkbox-label">2,56 м2</label>
-        <input type="checkbox" id="square-checkbox-6" class="popup-filter__checkbox" checked>
-        <label for="square-checkbox-6" class="popup-filter__checkbox-label">2,88 м2</label>
-      </fieldset>
-      <fieldset class="popup-filter__equipment-filter">
-        <h4 class="popup-filter__titles">Оснащение номера</h4>
-        <input type="checkbox" id="equipment-checkbox-1" class="popup-filter__checkbox" checked>
-        <label for="equipment-checkbox-1" class="popup-filter__checkbox-label">Пустой номер</label>
-        <input type="checkbox" id="equipment-checkbox-2" class="popup-filter__checkbox" checked>
-        <label for="equipment-checkbox-2" class="popup-filter__checkbox-label">Лежак</label>
-        <input type="checkbox" id="equipment-checkbox-3" class="popup-filter__checkbox" checked>
-        <label for="equipment-checkbox-3" class="popup-filter__checkbox-label">Когтеточка</label>
-        <input type="checkbox" id="equipment-checkbox-4" class="popup-filter__checkbox" checked>
-        <label for="equipment-checkbox-4" class="popup-filter__checkbox-label">Игровой-комплекс</label>
-        <input type="checkbox" id="equipment-checkbox-5" class="popup-filter__checkbox" checked>
-        <label for="equipment-checkbox-5" class="popup-filter__checkbox-label">Домик</label>
-      </fieldset>
-      <button class="popup-filter__reset-button">Сбросить фильтр</button>
-    </form>
+    <div class="main-content__form-wrapper">
+      <form action="#" method="GET" class="main-content__popup-filter popup-filter">
+        <fieldset class="popup-filter__price-filter">
+          <h4 class="popup-filter__titles">Цена за сутки,₽</h4>
+          <input type="text" name="price-from" id="price-from" placeholder="от 100" class="popup-filter__price-inputs">
+          <input type="text" name="price-to" id="price-to" placeholder="до 600" class="popup-filter__price-inputs">
+        </fieldset>
+        <fieldset class="popup-filter__square-filter">
+          <h4 class="popup-filter__titles">Площадь</h4>
+          <input type="checkbox" id="square-checkbox-1" class="popup-filter__checkbox" checked>
+          <label for="square-checkbox-1" class="popup-filter__checkbox-label">0,63 м2</label>
+          <input type="checkbox" id="square-checkbox-2" class="popup-filter__checkbox" checked>
+          <label for="square-checkbox-2" class="popup-filter__checkbox-label">0,90 м2</label>
+          <input type="checkbox" id="square-checkbox-3" class="popup-filter__checkbox" checked>
+          <label for="square-checkbox-3" class="popup-filter__checkbox-label">1,13 м2</label>
+          <input type="checkbox" id="square-checkbox-4" class="popup-filter__checkbox" checked>
+          <label for="square-checkbox-4" class="popup-filter__checkbox-label">1,56 м2</label>
+          <input type="checkbox" id="square-checkbox-5" class="popup-filter__checkbox" checked>
+          <label for="square-checkbox-5" class="popup-filter__checkbox-label">2,56 м2</label>
+          <input type="checkbox" id="square-checkbox-6" class="popup-filter__checkbox" checked>
+          <label for="square-checkbox-6" class="popup-filter__checkbox-label">2,88 м2</label>
+        </fieldset>
+        <fieldset class="popup-filter__equipment-filter">
+          <h4 class="popup-filter__titles">Оснащение номера</h4>
+          <input type="checkbox" id="equipment-checkbox-1" class="popup-filter__checkbox" checked>
+          <label for="equipment-checkbox-1" class="popup-filter__checkbox-label">Пустой номер</label>
+          <input type="checkbox" id="equipment-checkbox-2" class="popup-filter__checkbox" checked>
+          <label for="equipment-checkbox-2" class="popup-filter__checkbox-label">Лежак</label>
+          <input type="checkbox" id="equipment-checkbox-3" class="popup-filter__checkbox" checked>
+          <label for="equipment-checkbox-3" class="popup-filter__checkbox-label">Когтеточка</label>
+          <input type="checkbox" id="equipment-checkbox-4" class="popup-filter__checkbox" checked>
+          <label for="equipment-checkbox-4" class="popup-filter__checkbox-label">Игровой-комплекс</label>
+          <input type="checkbox" id="equipment-checkbox-5" class="popup-filter__checkbox" checked>
+          <label for="equipment-checkbox-5" class="popup-filter__checkbox-label">Домик</label>
+        </fieldset>
+        <button class="popup-filter__filter-button">Подобрать</button>
+        <button class="popup-filter__reset-button">Сбросить фильтр</button>
+      </form>
+    </div>
     <section class="main-content__cat-card">
       <div class="card">
         <img src="assets/images/card-econom-cat.jpg" alt="Cat picture" class="card__picture">
@@ -235,12 +254,11 @@
           </p>
         </div>
       </div>
-      <picture class="contacts__map">
-        <source srcset="/assets/images/map-mobile.jpg" type="image/jpeg" media="(max-width:659px)">
-        <source srcset="/assets/images/map-ipad.jpg" type="image/jpeg" media="(max-width:1365px)">
-        <source srcset="/assets/images/map-desktop.jpg" type="image/jpeg" media="(min-width:1366px)">
-        <img src="/assets/images/map-mobile.jpg" alt="we pn the map">
-      </picture>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Af4c55d9b2e3f9fe1bb0defe966412b5729107ec9da3f8dbeec1465d84e0d11bc&amp;source=constructor" 
+        width="320" height="300" frameborder="0"
+        class="contacts__map">
+      </iframe>
     </section>
     <div class="footer__footer-wrapper">
       <a href="#" class="footer__logo">

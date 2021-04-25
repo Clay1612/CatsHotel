@@ -1,9 +1,10 @@
 .popup-filter {
   display: none;
 
+  border-radius: 6px;
+
   @media (min-width: 1366px) {
     display: block;
-    grid-row-start: 2;
     margin-right: 90px;
     width: 210px;
   }
@@ -72,21 +73,48 @@
     background: url("/assets/images/checkbox-checked.svg") no-repeat 50% 50%;
   }
 
-  &__reset-button {
-    padding: 10px 35px;
+  &__reset-button,
+  &__filter-button {
+    display: block;
 
     font-size: 14px;
     line-height: 17px;
 
-    border: 2px solid #FAC663;
     border-radius: 25px;
+  }
+
+  &__filter-button {
+    margin-bottom: 15px;
+    padding: 10px 57px;
+
+    border: 2px solid #FAC663;
+    background: #FAC663;
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__reset-button {
+    margin-bottom: 50px;
+    padding: 10px 35px;
+
+    border: 2px solid #FAC663;
     background: white;
   }
 }
 
 .popup-filter--active {
   position: absolute;
-  top: 10px;
+  top: 100px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
 
   display: block;
+  margin: 0px 15px;
+  padding-left: 25px;
+  width: 290px;
+
+  background-color: lightblue;
 }
