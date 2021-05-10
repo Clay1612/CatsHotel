@@ -8,7 +8,9 @@ var popupFilterCloseButton = document.querySelector('.popup-filter__close-button
 var header = document.querySelector('.header');
 var mainMenu = document.querySelector('.header__main-menu');
 var headerMenuContacts = document.querySelector('.header__contacts');
-var formWrapper = document.querySelector('.main-content__form-wrapper'); //Menu burger
+var formWrapper = document.querySelector('.main-content__form-wrapper');
+var popupSubmitButton = document.querySelector('.popup-filter__filter-button');
+var requestURL; //Menu burger
 
 function menuBurgerFunction() {
   header.classList.toggle('header--active');
@@ -32,5 +34,11 @@ function filterPopupRemoveFunction() {
 }
 
 filterButton.addEventListener('click', filterPopupAddFunction);
-popupFilterCloseButton.addEventListener('click', filterPopupRemoveFunction);
+popupFilterCloseButton.addEventListener('click', filterPopupRemoveFunction); //Submit
+
+function sentServerInfoFunction() {
+  fetch('https://clay1612.github.io/Floristry/');
+}
+
+popupSubmitButton.addEventListener('click', sentServerInfoFunction);
 //# sourceMappingURL=index.js.map

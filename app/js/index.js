@@ -9,6 +9,8 @@ let header = document.querySelector('.header');
 let mainMenu = document.querySelector('.header__main-menu');
 let headerMenuContacts = document.querySelector('.header__contacts');
 let formWrapper = document.querySelector('.main-content__form-wrapper');
+let popupSubmitButton = document.querySelector('.popup-filter__filter-button');
+let requestURL;
 
 //Menu burger
 function menuBurgerFunction() {
@@ -36,3 +38,10 @@ function filterPopupRemoveFunction() {
 filterButton.addEventListener('click', filterPopupAddFunction);
 popupFilterCloseButton.addEventListener('click', filterPopupRemoveFunction);
 
+//Submit
+
+function sentServerInfoFunction() {
+  fetch('https://clay1612.github.io/Floristry/')
+}
+
+popupSubmitButton.addEventListener('click', sentServerInfoFunction);
