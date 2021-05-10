@@ -4,10 +4,11 @@
 var menuBurger = document.querySelector('.header__burger-button');
 var filterButton = document.querySelector('.filters__filter-button');
 var popupFilter = document.querySelector('.popup-filter');
-var popupFilterButton = document.querySelector('.popup-filter__filter-button');
+var popupFilterCloseButton = document.querySelector('.popup-filter__close-button');
 var header = document.querySelector('.header');
 var mainMenu = document.querySelector('.header__main-menu');
-var headerMenuContacts = document.querySelector('.header__contacts'); //Menu burger
+var headerMenuContacts = document.querySelector('.header__contacts');
+var formWrapper = document.querySelector('.main-content__form-wrapper'); //Menu burger
 
 function menuBurgerFunction() {
   header.classList.toggle('header--active');
@@ -20,20 +21,16 @@ menuBurger.addEventListener('click', menuBurgerFunction); // Filters Popup
 
 function filterPopupAddFunction() {
   popupFilter.classList.add('popup-filter--active');
-
-  if (popupFilter.classList.contains('popup-filter--active')) {
-    document.body.style.overflow = "hidden";
-  }
+  document.body.classList.toggle('hidden');
+  formWrapper.classList.toggle('main-content__form-wrapper--active');
 }
 
 function filterPopupRemoveFunction() {
   popupFilter.classList.remove('popup-filter--active');
-
-  if (popupFilter.classList.contains('popup-filter--active') == false) {
-    document.body.style.overflow = "visible";
-  }
+  document.body.classList.toggle('hidden');
+  formWrapper.classList.toggle('main-content__form-wrapper--active');
 }
 
 filterButton.addEventListener('click', filterPopupAddFunction);
-popupFilterButton.addEventListener('click', filterPopupRemoveFunction);
+popupFilterCloseButton.addEventListener('click', filterPopupRemoveFunction);
 //# sourceMappingURL=index.js.map

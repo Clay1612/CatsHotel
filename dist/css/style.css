@@ -191,8 +191,29 @@
       display: block;
       margin-right: 90px;
       width: 210px; } }
+  .popup-filter__close-button {
+    position: relative;
+    margin: 20px 20px 16px 220px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none; }
+    .popup-filter__close-button::before, .popup-filter__close-button::after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: 25%;
+      width: 14px;
+      height: 2px;
+      background-color: #1A212F; }
+    .popup-filter__close-button::before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .popup-filter__close-button::after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
   .popup-filter__price-filter {
-    margin: 0 0 35px 0;
+    margin: 0px 0 35px 0;
     padding: 0;
     border: none; }
   .popup-filter__titles {
@@ -204,6 +225,7 @@
     display: inline-block;
     margin: 0px;
     width: 100px;
+    height: 36px;
     border: 1px solid #E1E1E1; }
     .popup-filter__price-inputs:first-of-type {
       margin-right: 5px; }
@@ -237,9 +259,13 @@
     background: url("/assets/images/checkbox-checked.svg") no-repeat 50% 50%; }
   .popup-filter__reset-button, .popup-filter__filter-button {
     display: block;
+    width: 240px;
     font-size: 14px;
     line-height: 17px;
     border-radius: 25px; }
+    @media (min-width: 768px) {
+      .popup-filter__reset-button, .popup-filter__filter-button {
+        width: 190px; } }
   .popup-filter__filter-button {
     margin-bottom: 15px;
     padding: 10px 57px;
@@ -258,13 +284,27 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-55%, -68%);
+          transform: translate(-55%, -68%);
   display: block;
   margin: 0px 15px;
   padding-left: 25px;
   width: 290px;
-  background-color: lightblue; }
+  background: #FFFEFD;
+  -webkit-box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+          box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+  border-radius: 6px; }
+  @media (min-width: 768px) {
+    .popup-filter--active {
+      padding-left: 60px; } }
+
+.main-content__form-wrapper--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 254, 253, 0.8); }
 
 .card {
   display: grid;
@@ -592,5 +632,8 @@ body {
 img {
   max-width: 100%;
   height: auto; }
+
+.hidden {
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

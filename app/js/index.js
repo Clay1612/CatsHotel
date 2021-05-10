@@ -4,10 +4,11 @@
 let menuBurger = document.querySelector('.header__burger-button');
 let filterButton = document.querySelector('.filters__filter-button');
 let popupFilter = document.querySelector('.popup-filter');
-let popupFilterButton = document.querySelector('.popup-filter__filter-button');
+let popupFilterCloseButton = document.querySelector('.popup-filter__close-button');
 let header = document.querySelector('.header');
 let mainMenu = document.querySelector('.header__main-menu');
 let headerMenuContacts = document.querySelector('.header__contacts');
+let formWrapper = document.querySelector('.main-content__form-wrapper');
 
 //Menu burger
 function menuBurgerFunction() {
@@ -22,19 +23,15 @@ menuBurger.addEventListener('click', menuBurgerFunction);
 // Filters Popup
 function filterPopupAddFunction() {
   popupFilter.classList.add('popup-filter--active');
-
-  if (popupFilter.classList.contains('popup-filter--active')) {
-    document.body.style.overflow = "hidden";
-  }
+  document.body.classList.toggle('hidden');
+  formWrapper.classList.toggle('main-content__form-wrapper--active');
 }
 
 function filterPopupRemoveFunction() {
   popupFilter.classList.remove('popup-filter--active');
-
-  if (popupFilter.classList.contains('popup-filter--active') == false) {
-    document.body.style.overflow = "visible";
-  }
+  document.body.classList.toggle('hidden');
+  formWrapper.classList.toggle('main-content__form-wrapper--active');
 }
 
 filterButton.addEventListener('click', filterPopupAddFunction);
-popupFilterButton.addEventListener('click', filterPopupRemoveFunction);
+popupFilterCloseButton.addEventListener('click', filterPopupRemoveFunction);
