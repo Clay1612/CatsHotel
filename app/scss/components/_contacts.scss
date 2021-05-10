@@ -95,9 +95,24 @@
   }
 
   &__map {
-    img {
-      width: 100%;
+    width: 320px;
+    height: 300px;
+
+    @media (min-width: 660px) {
+      width: 350px;
       height: 100%;
+    }
+
+    @media(min-width: 768px) {
+      width: 399px;
+    }
+
+    @media(min-width: 1366px) {
+      width: 602px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 100%;
     }
   }
 }

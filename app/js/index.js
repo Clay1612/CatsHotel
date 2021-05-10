@@ -35,3 +35,4 @@ function filterPopupRemoveFunction() {
 
 filterButton.addEventListener('click', filterPopupAddFunction);
 popupFilterCloseButton.addEventListener('click', filterPopupRemoveFunction);
+
